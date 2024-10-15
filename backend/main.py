@@ -1,3 +1,6 @@
+"""
+FastAPI project.
+"""
 from typing import Union
 
 from fastapi import FastAPI
