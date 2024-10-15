@@ -20,8 +20,9 @@ jobs:
           architecture: 'x64'
       - name: Enter backend directory
         run: cd backend
-      - name: Install requirements
-        # Устанавливаем зависимости
-        run: pip install -r requirements.txt
+      - name: Install poetry dependencies
+        run: |
+          pip install poetry
+          poetry install
       - name: Run tests
-        run: pytest
+        run: poetry run pytest
