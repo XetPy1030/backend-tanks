@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "backend"
+name = "Tanks"
 version = "0.1.0"
 description = ""
 authors = ["XetPy1030 <xetpy1030@mail.ru>"]
