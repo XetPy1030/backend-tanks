@@ -12,7 +12,8 @@ def cli():
 
 @click.command(help='Start the server')
 @click.option('--release', is_flag=True, help='Run in release mode')
-def server(release: bool):
+@click.option('--log-level', default='info', help='Log level')
+def server(release: bool, log_level: str):
     click.echo('Starting server...')
 
     app = create_server(debug=not release)
@@ -20,7 +21,7 @@ def server(release: bool):
         app,
         host='0.0.0.0',
         port=8080,
-        log_level='info',
+        log_level=log_level,
     )
 
 
