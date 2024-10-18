@@ -2,8 +2,9 @@ import pytest
 from httpx import ASGITransport, AsyncClient
 from starlette.testclient import TestClient
 
-from main import app
+from tanks.server import create_server
 
+app = create_server()
 client = TestClient(app)
 
 
