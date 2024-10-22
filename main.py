@@ -1,8 +1,4 @@
 import click
-import pytest
-import uvicorn
-
-from tanks.server import create_server
 
 
 @click.group()
@@ -15,6 +11,9 @@ def cli():
 @click.option('--log-level', default='info', help='Log level')
 def server(release: bool, log_level: str):
     click.echo('Starting server...')
+
+    import uvicorn
+    from tanks.server import create_server
 
     app = create_server(debug=not release)
     uvicorn.run(
@@ -29,6 +28,8 @@ def server(release: bool, log_level: str):
 @click.option('--enable-warnings', is_flag=True, help='Enable warnings')
 def tests(enable_warnings: bool):
     click.echo('Running tests...')
+
+    import pytest
 
     args = ['-v', 'tests']
     if not enable_warnings:
