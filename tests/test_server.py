@@ -7,7 +7,7 @@ def test_read_main(client):
     assert response.json() == {'Hello': 'World'}
 
 
-@pytest.mark.anyio()
+@pytest.mark.asyncio
 async def test_root(async_client):
     async with async_client as ac:
         response = await ac.get("/")
@@ -15,7 +15,7 @@ async def test_root(async_client):
     assert response.json() == {'Hello': 'World'}
 
 
-@pytest.mark.anyio()
+@pytest.mark.asyncio
 async def test_socketio(socketio_client):
     socketio_client.connect("/", namespaces=[])
     socketio_client.disconnect()
