@@ -1,5 +1,7 @@
 # Танки
 
+[Архитектура проекта](https://miro.com/welcomeonboard/M0xmMDV6a0xwVHRsNmQ2UHNWN0NsMG1tWk9pWldrS05YK29LT2VMZFovQXlxMjFmSWZKcWxxN1lHK1JncWNQSm9BMjNzRCt3eWJvdktjTndCb0g2dUtZNVJqQU01Nm9yM3k3WlRkQkhZdFBkTnlhdWhZd3dOSlBVeDU0aDY0Y25yVmtkMG5hNDA3dVlncnBvRVB2ZXBnPT0hdjE=?share_link_id=979788151735)
+
 ## Описание
 
 Игра "Танки" - это игра, в которой игрок управляет танком и сражается с другими танками. Игра заканчивается, когда все
